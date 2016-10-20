@@ -146,10 +146,6 @@ h1 {
   background-image: url(../img/o.svg);
 }
 
-.boxes .box.player2:not(.box-filled-1):not(.box-filled-2):hover {
-  background-image: url(../img/x.svg);
-}
-
 .player_name_span {
   display: block;
   color: #000;
