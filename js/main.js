@@ -12,7 +12,7 @@ var GameModule = (function () {
      */
     var gameSettings = {
         currentPlayer: 'player1',
-        player1_name: '',
+        player1_name: ''
     };
     /**
      * An object that a property that matches a box in the grid.
@@ -188,8 +188,9 @@ var GameModule = (function () {
          * For every available box, find if it will block Player 1 from having three in a row
          * if the line equals 2
          */
+        var availableBoxScores;
         for (var i = 0; i < availableBoxes.length; i++) {
-            var availableBoxScores = currentBoardCombinations[availableBoxes[i]];
+            availableBoxScores = currentBoardCombinations[availableBoxes[i]];
             if (availableBoxScores.indexOf('2') >= 0) {
                 selected_box = availableBoxes[i];
                 break;
